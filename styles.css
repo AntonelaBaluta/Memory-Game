@@ -1,0 +1,195 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    display: flex;
+    /*background: #1d2c84;*/
+    background: url("img/fundal.png");
+  }
+  
+  .memory-game {
+    width: 640px;
+    height: 640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: flex-start;
+    align-items: center;
+  }  
+  
+  .memory-game-old {
+    width: 640px;
+    height: 640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+  }
+  
+  .memory-card {
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+  }
+  
+  .memory-card:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+  }
+  
+  .memory-card.flip {
+    transform: rotateY(180deg);
+  }
+  
+  .front-face,
+  .back-face {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    border-radius: 5px;
+    background: #455597;
+    backface-visibility: hidden;
+  }
+  
+  .front-face {
+    transform: rotateY(180deg);
+  }
+
+  /*pt mesaj final*/
+  .hidden {
+    display: none;
+  }
+
+  /*pt mesaj final suprapus*/
+  #game-container {
+    position: relative;
+  }
+  
+  #win-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 44px;
+    font-weight: 700;
+    font-family: monospace;
+  }
+
+  
+  .hidden {
+    display: none;
+  }
+
+  #game-title {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    transform: translateX(0%);
+    text-align: left;
+  }
+  
+  #game-title h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+  }
+
+  /*pt buton restart*/
+  #restart-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #restart-button {
+    z-index: 100;
+    padding: 10px 20px;
+    background-color: #061567;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .game-button {
+    visibility: visible;
+  }
+
+  
+  #start-button,
+#restart-container
+{
+  margin-top: 170px;
+}
+
+#start-button,
+#reset-button
+{
+  z-index: 100;
+}
+
+/*stil butoane*/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px; /*margine rotunjita*/
+  cursor: pointer;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+.timer {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.timer.win {
+  color: #4CAF50;
+}
+
+.div-butoane {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: row;
+  margin: -250px;
+}
+
+.timer-div {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 250px;
+  text-align: center;
+}

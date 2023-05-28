@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Memory Game</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+  
+  </div>
+ 
+  <!-- Pt mesaj final suprapus -->
+  <div id="game-container">
+    <div class="memory-game">
+    <p style="font-size: 50px; margin-top: 100px;">MEMORY GAME</p>
+
+    </div>
+
+  
+    <div id="win-message" class="hidden">
+      <div id="win-message-text">Ai câștigat!</div>
+      <p class="timer">Timpul tău este: </p><p id="win-time" class="timer">00:00</p>
+    </div>
+
+    <div class="div-butoane">
+      <button id="start-button">Start</button>
+      <button id="reset-button">Reset</button>
+    </div>
+    <p id="timer" class="timer-div">00:00</p>
+
+  </div>
+  
+    <section class="memory-game">
+
+     
+        <div class="memory-card" data-framework="spring">
+            <img class="front-face" src="img/spring.svg" alt="Spring"/>
+            <img class="back-face" src="img/Happy-Penguin.svg" alt="Memory Card"/>
+        </div>
+
+        <div class="memory-card" data-framework="spring">
+            <img class="front-face" src="img/spring.svg" alt="Spring"/>
+            <img class="back-face" src="img/Happy-Penguin.svg" alt="Memory Card"/>
+        </div>
+
+        <div class="memory-card" data-framework="wizard-penguin">
+            <img class="front-face" src="img/wizard-penguin.svg" alt="Wizard-penguin"/>
+            <img class="back-face" src="img/Happy-Penguin.svg" alt="Memory Card"/>
+        </div>
+
+        <div class="memory-card" data-framework="wizard-penguin">
+            <img class="front-face" src="img/wizard-penguin.svg" alt="Wizard-penguin"/>
+            <img class="back-face" src="img/Happy-Penguin.svg" alt="Memory Card"/>
+        </div>
+
+        <div class="memory-card" data-framework="sailor-penguin">
+            <img class="front-face" src="img/sailor-penguin.svg" alt="Sailor-penguin"/>
+            <img class="back-face" src="img/Happy-Penguin.svg" alt="Memory Card"/>
+        </div>
+
+        <div class="memory-card" data-framework="sailor-penguin">
+            <img class="front-face" src="img/sailor-penguin.svg" alt="Sailor-penguin"/>
+            <img class="back-face" src="img/Happy-Penguin.svg" alt="Memory Card"/>
+        </div>
+
+        <div class="memory-card" data-framework="party">
+            <img class="front-face" src="img/party.svg" alt="Party"/>
+            <img class="back-face" src="img/Happy-Penguin.svg" alt="Memory Card"/>
+        </div>
+
+        <div class="memory-card" data-framework="party">
+            <img class="front-face" src="img/party.svg" alt="Party"/>
+            <img class="back-face" src="img/Happy-Penguin.svg" alt="Memory Card"/>
+        </div>
+
+        <div class="memory-card" data-framework="bowler">
+            <img class="front-face" src="img/bowler.svg" alt="Bowler"/>
+            <img class="back-face" src="img/Happy-Penguin.svg" alt="Memory Card"/>
+        </div>
+
+        <div class="memory-card" data-framework="bowler">
+            <img class="front-face" src="img/bowler.svg" alt="Bowler"/>
+            <img class="back-face" src="img/Happy-Penguin.svg" alt="Memory Card"/>
+        </div>
+
+        <div class="memory-card" data-framework="detective_penguin">
+            <img class="front-face" src="img/detective_penguin.svg" alt="Detective_penguin"/>
+            <img class="back-face" src="img/Happy-Penguin.svg" alt="Memory Card"/>
+        </div>
+
+        <div class="memory-card" data-framework="detective_penguin">
+            <img class="front-face" src="img/detective_penguin.svg" alt="Detective_penguin"/>
+            <img class="back-face" src="img/Happy-Penguin.svg" alt="Memory Card"/>
+        </div>
+        
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
